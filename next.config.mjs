@@ -23,9 +23,9 @@ const nextConfig = {
           { key: "Access-Control-Allow-Credentials", value: "true" },
           {
             key: "Access-Control-Allow-Origin",
-            value: process.env.NEXT_PUBLIC_BACK_OFFICE_URL,
+            value: process.env.NEXT_PUBLIC_BACK_OFFICE_URL || "*",
           },
-          { key: "Access-Control-Allow-Methods", value: "GET" },
+          { key: "Access-Control-Allow-Methods", value: "GET,POST,PUT,DELETE,OPTIONS" },
           {
             key: "Access-Control-Allow-Headers",
             value:
